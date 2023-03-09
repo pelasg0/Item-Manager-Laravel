@@ -19,10 +19,11 @@
                     <label for="">Typ</label>
                     <input type="text" class="form-control" name="name">
                 </div>
+                
             </form>
         </div>
     </div>
 </div>
 
 
-@stop
+@endsection
