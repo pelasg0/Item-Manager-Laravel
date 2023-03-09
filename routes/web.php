@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/info', function () {
     return view('info');
 });
+Route::get('/insert', function () {
+    return view('insert');
+});
 Route::get('/', function () {
     return view('index');
 });

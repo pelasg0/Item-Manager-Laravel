@@ -20,13 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <!--<span class="sr-only">(current)</span>--></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Suche</a>
+                    <a class="nav-link" href="/">Suche</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Hinzufügen</a>
+                    <a class="nav-link" href="/insert">Hinzufügen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/info">Infos</a>
@@ -34,9 +34,8 @@
             </ul>
         </div>
     </nav>
-
-
-    @yield('main')
+    @yield('info')
+    @yield('insert')
 
     
   <!-- Your HTML content goes here -->
