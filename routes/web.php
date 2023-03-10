@@ -24,6 +24,6 @@ Route::get('/insert', [ItemController::class, 'index']);
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/suche', function () {
-    return view('suche');
+Route::get('/search', function () {
+    return view('search');
 });

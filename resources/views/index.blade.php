@@ -23,7 +23,7 @@
                     <a class="nav-link" href="/home">Home <!--<span class="sr-only">(current)</span>--></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Suche</a>
+                    <a class="nav-link" href="/search">Suche</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/insert">Hinzufügen</a>
@@ -37,7 +37,7 @@
     @yield('info')
     @yield('insert')
     @yield('home')
-    @yield('suche')
+    @yield('search')
 
     
   <!-- Your HTML content goes here -->

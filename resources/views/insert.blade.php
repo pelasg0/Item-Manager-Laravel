@@ -19,7 +19,7 @@
                     <label for="">Typ</label>
                     <input type="text" class="form-control" name="name">
                 </div>
-                
+                <button type="button" class="btn btn-secondary mt-3">Suchen!</button>
             </form>
         </div>
     </div>
