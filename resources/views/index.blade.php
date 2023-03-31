@@ -38,6 +38,7 @@
     @yield('insert')
     @yield('home')
     @yield('search')
+    @yield('items')
 
     
   <!-- Your HTML content goes here -->

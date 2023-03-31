@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         for($i = 0; $i < 10; $i++){
-            DB::table('item')->insert([
+            DB::table('items')->insert([
                 'name' => Str::random(10),
                 'wert' => '100',
                 'typ' => Str::random(10),

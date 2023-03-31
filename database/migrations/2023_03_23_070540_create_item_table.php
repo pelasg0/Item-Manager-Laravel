@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('item', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->id('itemId');
             $table->string('name');
             $table->integer('wert');
@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('bildname');
             $table->timestamps();
         });
-        Schema::create('uebersetzung', function (Blueprint $table) {
-            $table->id('uebersetzungId');
+        Schema::create('translations', function (Blueprint $table) {
+            $table->id('translationId');
             $table->foreignId('itemId');
-            $table->string('sprache');
-            $table->string('uebersetzungText');
+            $table->string('language');
+            $table->string('translationText');
             $table->timestamps();
         });
     }
@@ -33,7 +33,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('item');
-        Schema::dropIfExists('uebersetzung');
+        Schema::dropIfExists('items');
+        Schema::dropIfExists('translations');
     }
 };

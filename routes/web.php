@@ -17,13 +17,14 @@ use App\Http\Controllers\ItemController;
 Route::get('/info', function () {
     return view('info');
 });
-Route::get('/home', function () {
-    return view('home');
+Route::get('/home', [ItemController::class, 'home']);
+Route::get('/insert', function() {
+    return view('insert');
 });
-Route::get('/insert', [ItemController::class, 'index']);
 Route::get('/', function () {
     return view('index');
 });
 Route::get('/search', function () {
     return view('search');
 });
+Route::get('/items', [ItemController::class, 'index']);
