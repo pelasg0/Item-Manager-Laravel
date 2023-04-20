@@ -39,6 +39,7 @@
     @yield('home')
     @yield('search')
     @yield('items')
+    @yield('item')
 
     
   <!-- Your HTML content goes here -->
